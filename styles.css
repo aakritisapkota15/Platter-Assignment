@@ -1,0 +1,154 @@
+.page-width {
+  max-width: 1280px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.product-card {
+  min-width: 0;
+}
+
+.card-inner {
+  min-width: 0;
+}
+
+.card-inner h3.line-clamp-2 {
+  display: block;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.card-inner h3.line-clamp-2 a {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  word-break: break-word;
+}
+
+
+.card-inner > div.p-4 {
+  min-width: 0;
+  overflow: hidden;
+}
+
+.card-inner > a.group {
+  flex-shrink: 0;
+}
+
+/* Product title: all-caps sans like mock */
+.product-title-link {
+  font-weight: 700;
+  font-size: 0.6875rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  line-height: 1.35;
+}
+
+@media (min-width: 640px) {
+  .product-title-link {
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+  }
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #9ca3af transparent;
+}
+
+/* Thickness: vertical bar uses width, horizontal bar uses height. Grows to 6px when the scrollbar is hovered. */
+*::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+*::-webkit-scrollbar:hover {
+  width: 6px;
+  height: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #9ca3af;
+  border-radius: 9999px;
+  min-height: 24px;
+}
+
+*::-webkit-scrollbar-thumb:hover,
+*::-webkit-scrollbar-thumb:active {
+  background: #6b7280;
+}
+
+@media (min-width: 768px) {
+  #show-more-wrapper {
+    max-height: none !important;
+    overflow: visible !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .best-sellers-slider {
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .best-sellers-slider::-webkit-scrollbar {
+    display: none;
+  }
+
+  .best-sellers-slider .product-card {
+    flex: 0 0 calc(20% - 1.2rem);
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+  }
+}
+
+/* Custom carousel scroll track: thin light gray line; grows on hover (mock). */
+.carousel-scroll-track {
+  height: 4px;
+  transition: height 0.15s ease;
+}
+
+.carousel-scroll-track:hover {
+  height: 6px;
+}
+
+.carousel-scroll-thumb {
+  min-width: 2.25rem;
+  width: 25%;
+  left: 0;
+  cursor: grab;
+  transition: width 0.08s ease-out, left 0.08s ease-out;
+}
+
+.carousel-scroll-thumb.is-dragging {
+  transition: none;
+  cursor: grabbing;
+}
+
+#carousel-scroll-track:focus-visible {
+  outline: 2px solid #111827;
+  outline-offset: 3px;
+}
