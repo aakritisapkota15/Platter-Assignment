@@ -39,3 +39,14 @@ In short: **HTML for skeleton, CSS for layout quirks, JS for data and interactio
 - **Mobile:** 2-column grid, first N products visible, **Show more / Show less** with a height transition on a wrapper.  
 - **Desktop (`md+`):** Horizontal **flex** row with **scroll snap**, **no** native bar, **no** prev/next arrows; the **gray track + dark thumb** under the section drives (and reflects) scroll.  
 - **Cards:** Images `img1` / `img2` with hover swap, badges (Best Seller / Save, including both), uppercase title styling, star row + formatted review count.
+
+
+## Shopify Preview:
+Store URL: https://safal-bag.myshopify.com
+Password: platter123
+<img width="1465" height="915" alt="image" src="https://github.com/user-attachments/assets/d4c60708-9d19-42ab-9142-04199d3e5174" />
+<br>
+<img width="643" height="941" alt="image" src="https://github.com/user-attachments/assets/77481fb2-2314-4a27-8ba6-214d7668872d" />
+<br>
+<img width="642" height="922" alt="image" src="https://github.com/user-attachments/assets/79a83d72-dda5-44c1-a554-66d69c7ad51f" />
+
